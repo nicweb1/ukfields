@@ -144,16 +144,16 @@
             cursor: pointer;
         }
 
-        .about-wide {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            border: 2px solid #004080;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-            max-width: 960px;
-            margin: 20px auto;
-        }
+.about-wide {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #004080;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    max-width: calc(3 * 300px + 2 * 20px); /* 3 boxes of 300px + 2 gaps of 20px */
+    margin: 20px auto;
+}
 
         .about-wide:hover {
             transform: translateY(-10px);
