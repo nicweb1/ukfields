@@ -17,13 +17,12 @@
             color: #004080;
             padding: 20px;
             text-align: center;
-            position: relative;
         }
 
         header img {
-            height: 50px;
-            float: left;
+            height: 60px;
             margin-right: 15px;
+            float: left;
         }
 
         header h1 {
@@ -118,14 +117,14 @@
         }
 
         .service-item {
-            flex: 1 1 220px;
+            flex: 1 1 300px;
             background-color: #ffffff;
             padding: 20px;
             border-radius: 10px;
             border: 2px solid #004080;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-            max-width: 220px;
+            max-width: 300px;
             text-align: center;
         }
 
@@ -145,25 +144,28 @@
             cursor: pointer;
         }
 
-        .about-wide-box {
+        .about-wide {
             background-color: #ffffff;
-            padding: 30px;
+            padding: 20px;
             border-radius: 10px;
             border: 2px solid #004080;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-            margin-top: 20px;
-            max-width: calc(2 * 220px + 20px);
-            text-align: left;
-            margin-left: auto;
-            margin-right: auto;
+            max-width: 960px;
+            margin: 20px auto;
         }
 
-        .about-wide-box:hover {
+        .about-wide:hover {
             transform: translateY(-10px);
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
             background-color: #f0f8ff;
             cursor: pointer;
+        }
+
+        .about-wide h2 {
+            color: #004080;
+            margin-bottom: 15px;
+            text-align: center;
         }
 
         footer {
@@ -201,6 +203,7 @@
 <section class="content" id="services">
     <h2>Our Services</h2>
     <div class="services">
+        
         <div class="service-item">
             <img src="images/compensation.png" alt="Consumer Compensation Icon" style="height: 60px; margin-bottom: 10px;">
             <h3>Consumer Compensation</h3>
@@ -220,32 +223,29 @@
         </div>
 
         <div class="service-item">
-            <img src="images/assistance.png" alt="Legal Assistance Icon" style="height: 60px; margin-bottom: 10px;">
-            <h3>Legal Assistance</h3>
-            <p>Providing expert legal guidance to ensure fair outcomes and protect your rights throughout the claims process.</p>
-        </div>
-
-        <div class="service-item">
-            <img src="images/assistance.png" alt="Legal Assistance Icon" style="height: 60px; margin-bottom: 10px;">
-            <h3>Legal Assistance</h3>
-            <p>Providing expert legal guidance to ensure fair outcomes and protect your rights throughout the claims process.</p>
-        </div>
-
-        <div class="service-item">
             <img src="images/consultancy.png" alt="Free Consultation Icon" style="height: 60px; margin-bottom: 10px;">
             <h3>Free Consultations</h3>
             <p>Offering obligation-free consultations to assess your claim and provide professional advice.</p>
         </div>
+
     </div>
 </section>
 
-<section class="content" id="about">
-    <div class="about-wide-box">
+<section id="about">
+    <div class="about-wide">
         <h2>About UK Fields Services</h2>
-        <p>At <strong>UK Fields Services</strong>, we pride ourselves on delivering reliable, efficient, and professional claim management services tailored to both individuals and businesses across the UK. With over <strong>25 years of experience</strong> in the claims and compensation industry, we have built a reputation for excellence, integrity, and results.</p>
-        <p>Our experienced team works alongside a network of specialists covering every sector — from consumer rights to complex business disputes — ensuring that no matter your situation, you receive expert guidance and support.</p>
-        <p>Over the years, we have helped <strong>thousands of consumers and businesses</strong> successfully recover compensation they were rightfully owed, without the stress, delays, or uncertainty often associated with claims processes. Whether you're seeking redress for mis-sold financial products, contractual issues, or other disputes, we are committed to making the process simple, transparent, and effective.</p>
-        <p>At UK Fields Services, your claim is our priority, and your success is our mission.</p>
+        <p>
+            At <strong>UK Fields Services</strong>, we pride ourselves on delivering reliable, efficient, and professional claim management services tailored to both individuals and businesses across the UK. With over <strong>25 years of experience</strong> in the claims and compensation industry, we have built a reputation for excellence, integrity, and results.
+        </p>
+        <p>
+            Our experienced team works alongside a network of specialists covering every sector — from consumer rights to complex business disputes — ensuring that no matter your situation, you receive expert guidance and support.
+        </p>
+        <p>
+            Over the years, we have helped <strong>thousands of consumers and businesses</strong> successfully recover compensation they were rightfully owed, without the stress, delays, or uncertainty often associated with claims processes. Whether you're seeking redress for mis-sold financial products, contractual issues, or other disputes, we are committed to making the process simple, transparent, and effective.
+        </p>
+        <p>
+            At UK Fields Services, your claim is our priority, and your success is our mission.
+        </p>
     </div>
 </section>
 
