@@ -16,28 +16,27 @@
         background-color: white;
         color: #004080;
         padding: 20px;
-        text-align: right;
-    }
-
-    .header-content {
-        display: inline-flex;
+        display: flex;
         align-items: center;
-        justify-content: flex-end;
-        gap: 15px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
     }
 
-    .header-content img {
+    header img {
         height: 60px;
+        margin-right: 15px;
     }
 
-    .header-content h1 {
+    header h1 {
         margin: 0;
         font-size: 24px;
     }
 
-    .header-content p {
+    header p {
         margin: 0;
         font-size: 14px;
+        width: 100%;
+        color: #333;
     }
 
     nav {
@@ -177,26 +176,40 @@
         background-color: #004080;
         color: white;
         text-align: center;
-        padding: 15px;
+        padding: 20px;
         margin-top: 30px;
+    }
+
+    footer nav {
+        margin-top: 10px;
     }
 
     footer nav a {
         color: white;
-        margin: 0 10px;
+        margin: 0 15px;
         text-decoration: underline;
+        font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+        header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        header img {
+            margin-bottom: 10px;
+        }
     }
 </style>
 </head>
 <body>
 
 <header>
-    <div class="header-content">
-        <img src="images/logo.png" alt="UK Field Services Logo">
-        <div>
-            <h1>UK Fields Services</h1>
-            <p>Your Trusted Partner for Compensation Claims</p>
-        </div>
+    <img src="images/logo.png" alt="UK Field Services Logo">
+    <div>
+        <h1>UK Fields Services</h1>
+        <p>Your Trusted Partner for Compensation Claims</p>
     </div>
 </header>
 
