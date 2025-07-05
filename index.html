@@ -120,7 +120,7 @@
     }
 
     .service-item {
-        flex: 1 1 300px;
+        flex: 1 1 calc(33.33% - 40px);
         background-color: #ffffff;
         padding: 20px;
         border-radius: 10px;
@@ -199,6 +199,12 @@
         font-weight: bold;
     }
 
+    @media (max-width: 900px) {
+        .service-item {
+            flex: 1 1 calc(50% - 40px);
+        }
+    }
+
     @media (max-width: 600px) {
         header {
             flex-direction: column;
@@ -209,6 +215,10 @@
         header div {
             text-align: center;
             margin-top: 10px;
+        }
+
+        .service-item {
+            flex: 1 1 100%;
         }
     }
 </style>
