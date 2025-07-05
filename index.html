@@ -158,27 +158,56 @@
     }
 
     .about-wide {
+        display: flex;
+        align-items: center;
         background-color: #ffffff;
         padding: 20px;
         border-radius: 10px;
-        border: 2px solid #004080;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: 3px solid #004080;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
         max-width: 1240px;
         margin: 20px auto;
+        gap: 20px;
     }
 
     .about-wide:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+        transform: translateY(-8px);
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
         background-color: #f0f8ff;
         cursor: pointer;
     }
 
-    .about-wide h2 {
-        color: #004080;
+    .about-icon {
+        flex-shrink: 0;
+    }
+
+    .about-icon img {
+        height: 80px;
+        width: 80px;
+        border: 2px solid #004080;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: white;
+    }
+
+    .about-content {
+        flex: 1;
+    }
+
+    .about-content h2 {
+        background-color: #004080;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
         margin-bottom: 15px;
         text-align: center;
+    }
+
+    .about-content p {
+        color: #333;
+        line-height: 1.6;
+        margin-bottom: 12px;
     }
 
     .banner-title {
@@ -232,6 +261,15 @@
         .services {
             grid-template-columns: 1fr;
         }
+
+        .about-wide {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .about-icon {
+            margin-bottom: 15px;
+        }
     }
 </style>
 </head>
@@ -242,7 +280,7 @@
         <img src="images/logo.png" alt="UK Field Services Logo">
     </div>
     <div style="text-align: right;">
-        <h1>Your Trusted Partner for Compensation Claims<h1>
+        <h1>Your Trusted Partner for Compensation Claims</h1>
     </div>
 </header>
 
@@ -312,19 +350,24 @@
 
 <section id="about">
     <div class="about-wide">
-        <h2>About UK Fields Services</h2>
-        <p>
-            At <strong>UK Fields Services</strong>, we pride ourselves on delivering reliable, efficient, and professional claim management services tailored to both individuals and businesses across the UK. With over <strong>25 years of experience</strong> in the claims and compensation industry, we have built a reputation for excellence, integrity, and results.
-        </p>
-        <p>
-            Our experienced team works alongside a network of specialists covering every sector — from consumer rights to complex business disputes — ensuring that no matter your situation, you receive expert guidance and support.
-        </p>
-        <p>
-            Over the years, we have helped <strong>thousands of consumers and businesses</strong> successfully recover compensation they were rightfully owed, without the stress, delays, or uncertainty often associated with claims processes. Whether you're seeking redress for mis-sold financial products, contractual issues, or other disputes, we are committed to making the process simple, transparent, and effective.
-        </p>
-        <p>
-            At UK Fields Services, your claim is our priority, and your success is our mission.
-        </p>
+        <div class="about-icon">
+            <img src="favicon.png" alt="UK Fields Services Icon">
+        </div>
+        <div class="about-content">
+            <h2>About UK Fields Services</h2>
+            <p>
+                At <strong>UK Fields Services</strong>, we pride ourselves on delivering reliable, efficient, and professional claim management services tailored to both individuals and businesses across the UK. With over <strong>25 years of experience</strong> in the claims and compensation industry, we have built a reputation for excellence, integrity, and results.
+            </p>
+            <p>
+                Our experienced team works alongside a network of specialists covering every sector — from consumer rights to complex business disputes — ensuring that no matter your situation, you receive expert guidance and support.
+            </p>
+            <p>
+                Over the years, we have helped <strong>thousands of consumers and businesses</strong> successfully recover compensation they were rightfully owed, without the stress, delays, or uncertainty often associated with claims processes. Whether you're seeking redress for mis-sold financial products, contractual issues, or other disputes, we are committed to making the process simple, transparent, and effective.
+            </p>
+            <p>
+                At UK Fields Services, your claim is our priority, and your success is our mission.
+            </p>
+        </div>
     </div>
 </section>
 
