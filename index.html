@@ -17,25 +17,28 @@
         color: #004080;
         padding: 20px;
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        justify-content: flex-start;
         flex-wrap: wrap;
     }
 
     header img {
         height: 60px;
-        margin-right: 15px;
+    }
+
+    header div {
+        text-align: right;
     }
 
     header h1 {
         margin: 0;
         font-size: 24px;
+        color: #004080;
     }
 
     header p {
         margin: 0;
         font-size: 14px;
-        width: 100%;
         color: #333;
     }
 
@@ -194,11 +197,13 @@
     @media (max-width: 600px) {
         header {
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
+            text-align: center;
         }
 
-        header img {
-            margin-bottom: 10px;
+        header div {
+            text-align: center;
+            margin-top: 10px;
         }
     }
 </style>
