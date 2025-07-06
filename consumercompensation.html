@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UK Field Services - Consumer Compensation</title>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Consumer compensation experts for all types of claims including holidays, utilities, banking disputes, online purchases, warranties, and more. Get help from UK Fields Services.">
+<meta name="keywords" content="consumer compensation, holiday claims, bank dispute, utility claim, online purchase, warranty, UK compensation">
+<meta name="author" content="UK Fields Services">
+<meta name="robots" content="index, follow">
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    header {
+        background-color: white;
+        color: #004080;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    header img {
+        height: 60px;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 24px;
+        color: #004080;
+    }
+    header p {
+        margin: 0;
+        font-size: 14px;
+        color: #333;
+    }
+    nav {
+        background-color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    nav a {
+        color: #004080;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+    }
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+    }
+    .hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        padding: 0 20px;
+        max-width: 90%;
+    }
+    .hero-text h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+    .hero-text p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    }
+    .contact-btn {
+        display: inline-block;
+        background-color: #004080;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 10px;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .contact-btn:hover {
+        background-color: #00264d;
+        box-shadow: 0 0 10px rgba(0, 64, 128, 0.6);
+    }
+    .content {
+        padding: 20px;
+        max-width: 1000px;
+        margin: auto;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .services {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 20px;
+        justify-items: center;
+    }
+    .service-item {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        border: 2px solid #004080;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+    .service-item h3 {
+        color: #004080;
+        margin-bottom: 15px;
+    }
+    .service-item p {
+        color: #333;
+    }
+    .service-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+        background-color: #f0f8ff;
+        cursor: pointer;
+    }
+    .about-wide {
+        display: flex;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        border: 3px solid #004080;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        max-width: 1240px;
+        margin: 20px auto;
+        gap: 20px;
+    }
+    .about-wide:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+        background-color: #f0f8ff;
+        cursor: pointer;
+    }
+    .about-icon {
+        flex-shrink: 0;
+    }
+    .about-icon img {
+        height: 80px;
+        width: 80px;
+        border: 2px solid #004080;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: white;
+    }
+    .about-content {
+        flex: 1;
+    }
+    .about-content h2 {
+        background-color: #004080;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .about-content p {
+        color: #333;
+        line-height: 1.6;
+        margin-bottom: 12px;
+    }
+    .banner-title {
+        background-color: #004080;
+        color: white;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    footer {
+        background-color: #004080;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+    }
+    footer nav {
+        margin-top: 10px;
+        background-color: #004080;
+        padding: 10px 0;
+    }
+    footer nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    @media (max-width: 900px) {
+        .services {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media (max-width: 600px) {
+        header {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        header div {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .services {
+            grid-template-columns: 1fr;
+        }
+        .about-wide {
+            flex-direction: column;
+            text-align: center;
+        }
+        .about-icon {
+            margin-bottom: 15px;
+        }
+    }
+    .privacy-modal {
+        display: none; 
+        position: fixed; 
+        z-index: 1000; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%;
+        overflow: auto; 
+        background-color: rgba(0, 0, 0, 0.5); 
+    }
+    .privacy-modal-content {
+        background-color: #fff;
+        margin: 10% auto;
+        padding: 20px;
+        border: 2px solid #004080;
+        width: 90%;
+        max-width: 600px;
+        border-radius: 10px;
+        position: relative;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+    .privacy-close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        cursor: pointer;
+    }
+    .privacy-close:hover,
+    .privacy-close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <div style="display: flex; align-items: center;">
+        <img src="images/logo.png" alt="UK Field Services Logo" style="height: 70px;">
+    </div>
+    <div style="text-align: right;">
+        <h1 style="font-size: 20px; color: #00264d; font-weight: 600; font-family: 'Georgia', serif; margin: 0;">
+            Trusted Experts in Claims & Legal Support
+        </h1>
+        <p style="font-size: 14px; color: #333; font-style: italic; margin-top: 5px;">
+            Over 25 Years of Experience in Compensation & Dispute Resolution
+        </p>
+    </div>
+</header>
+
+<section class="hero">
+    <img src="images/hero-bg.jpg" alt="Compensation Claims Banner">
+    <div class="hero-text">
+        <h1>Helping Individuals & Businesses Get the Compensation They Deserve</h1>
+        <p>Expert support for all types of claims - Hassle-free and professional</p>
+        <a href="#contact" class="contact-btn">Get In Touch</a>
+    </div>
+</section>
+
+<section class="content" id="services">
+    <div class="banner-title">
+        <h2>Types of Consumer Compensation Claims</h2>
+    </div>
+    <div class="services">
+
+        <div class="service-item">
+            <img src="images/shield-holiday.png" alt="Holiday & Travel Claims" style="height: 60px; margin-bottom: 10px;">
+            <h3>Holiday & Travel Claims</h3>
+            <p>Cancelled holidays, hotel issues, lost luggage, or other travel troubles? We help you get the compensation you deserve from travel providers.</p>
+        </div>
+
+        <div class="service-item">
+            <img src="images/shield-bank.png" alt="Bank & Payment Disputes" style="height: 60px; margin-bottom: 10px;">
+            <h3>Bank & Payment Disputes</h3>
+            <p>Unrecognised transactions, unfair charges, or mis-sold financial products? We support you in reclaiming your money from banks and payment providers.</p>
+        </div>
+
+        <div class="service-item">
+            <img src="images/shield-utility.png" alt="Utility & Energy Claims" style="height: 60px; margin-bottom: 10px;">
+            <h3>Utility & Energy Claims</h3>
+            <p>Incorrect energy bills, service failures, or mis-sold contracts with energy, water, or telecoms? Get help resolving disputes and claiming refunds.</p>
+        </div>
+
+        <div class="service-item">
+            <img src="images/shield-online.png" alt="Online Purchases & Subscriptions" style="height: 60px; margin-bottom: 10px;">
+            <h3>Online Purchases & Subscriptions</h3>
+            <p>Problems with online shopping, scams, undelivered items, or recurring payments? We can help you recover your money and cancel unfair charges.</p>
+        </div>
+
+        <div class="service-item">
+            <img src="images/shield-warranty.png" alt="Warranty & Service Contracts" style="height: 60px; margin-bottom: 10px;">
+            <h3>Warranty & Service Contracts</h3>
+            <p>Faulty repairs, warranties not honoured, or poor after-sales service? Ensure your rights are protected and your contract is fulfilled.</p>
+        </div>
+
+        <div class="service-item">
+            <img src="images/shield-retail.png" alt="Retail Purchases" style="height: 60px; margin-bottom: 10px;">
+            <h3>Retail Purchases</h3>
+            <p>Faulty goods, items not as described, or missing deliveries from UK retailers? You have the right to a refund, repair, or replacement.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="about">
+    <div class="about-wide">
+        <div class="about-icon">
+            <img src="images/shield.jpg" alt="UK Fields Services Icon">
+        </div>
+        <div class="about-content">
+            <h2>About UK Fields Services</h2>
+            <p>
+                At <strong>UK Fields Services</strong>, we pride ourselves on delivering reliable, efficient, and professional claim management services tailored to both individuals and businesses across the UK. With over <strong>25 years of experience</strong> in the claims and compensation industry, we have built a reputation for excellence, integrity, and results.
+            </p>
+            <p>
+                Our experienced team works alongside a network of specialists covering every sector — from consumer rights to complex business disputes — ensuring that no matter your situation, you receive expert guidance and support.
+            </p>
+            <p>
+                Over the years, we have helped <strong>thousands of consumers and businesses</strong> successfully recover compensation they were rightfully owed, without the stress, delays, or uncertainty often associated with claims processes. Whether you're seeking redress for mis-sold financial products, contractual issues, or other disputes, we are committed to making the process simple, transparent, and effective.
+            </p>
+            <p>
+                At UK Fields Services, your claim is our priority, and your success is our mission.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="about-wide">
+        <div class="about-icon">
+            <img src="images/shield.jpg" alt="Contact Icon">
+        </div>
+        <div class="about-content">
+            <h2>Contact Us</h2>
+            <p>Ready to start your claim or have questions? Our team is here to help. Reach out today for a free, no-obligation consultation.</p>
+            <p><strong>Email:</strong> <a href="mailto:info@ukfieldsservices.co.uk">info@ukfieldsservices.co.uk</a></p>
+            <p><strong>Phone:</strong> <a href="tel:08001234567">0800 123 4567</a></p>
+        </div>
+    </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 UK Fields Services. All rights reserved.</p>
+  <nav>
+    <a href="#" onclick="openPrivacy(); return false;">Privacy</a>
+    <a href="#" onclick="openTerms(); return false;">Terms</a>
+    <a href="#contact">Contact</a>
+    <a href="#services">Our Services</a>
+  </nav>
+</footer>
+
+<!-- PRIVACY MODAL -->
+<div id="privacyModal" class="privacy-modal">
+  <div class="privacy-modal-content">
+    <span class="privacy-close" onclick="closePrivacy()">&times;</span>
+    <h2>Privacy Notice</h2>
+    <p><strong>UK Field Services</strong> is a claims support agency. We are <strong>not a law firm</strong> and do not employ lawyers. Any legal services you may require in relation to your case are <strong>outsourced to trusted professional partners</strong> who are qualified and specialised in the relevant area of law.</p>
+    <p>We take privacy seriously and ensure that all information you provide to us is kept confidential and used strictly for the purpose of assisting with your compensation or claims process. By using this site and submitting a claim, you agree to our terms of service and privacy practices.</p>
+    <p>For any questions regarding your personal data or our privacy approach, please contact us at <a href="mailto:info@ukfieldsservices.co.uk">info@ukfieldsservices.co.uk</a>.</p>
+  </div>
+</div>
+
+<!-- TERMS MODAL -->
+<div id="termsModal" class="privacy-modal">
+  <div class="privacy-modal-content">
+    <span class="privacy-close" onclick="closeTerms()">&times;</span>
+    <h2>Terms & Conditions</h2>
+    <p><strong>UK Field Services</strong> provides claims support and consultation services. We are <strong>not a law firm</strong> and do not offer legal representation ourselves. Where legal services are required, we refer clients to independent, qualified legal professionals.</p>
+    <p>By using our services or submitting a claim through our website, you agree to the following terms:</p>
+    <ul>
+      <li>All information provided must be accurate and truthful to the best of your knowledge.</li>
+      <li>Submission of a claim does not guarantee a successful outcome. Outcomes depend on individual case merits and third-party entities involved.</li>
+      <li>We may communicate with you via email, telephone, or messaging platforms regarding your claim or consultation.</li>
+      <li>Any legal documentation or processes are the responsibility of the instructed legal professionals, not UK Field Services.</li>
+      <li>We reserve the right to decline service if information is incomplete, fraudulent, or falls outside our scope.</li>
+    </ul>
+    <p>Use of this website and our services implies full agreement with these terms. For questions, please contact us at <a href="mailto:info@ukfieldsservices.co.uk">info@ukfieldsservices.co.uk</a>.</p>
+  </div>
+</div>
+
+<!-- GDPR BANNER -->
+<div id="gdpr-banner" style="display:none; position: fixed; bottom: 0; left: 0; right: 0; background: #004080; color: white; padding: 15px; text-align: center; z-index: 9999;">
+  <span>
+    We use your submitted data strictly for handling your claim in accordance with our
+    <a href="#" onclick="openPrivacy(); return false;" style="color: #ffd700; text-decoration: underline;">Privacy Notice</a>.
+    By continuing, you agree to our data usage terms under GDPR.
+  </span>
+  <button onclick="acceptGdpr()" style="margin-left: 20px; background: #fff; color: #004080; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer;">Accept</button>
+</div>
+
+<script>
+function openPrivacy() {
+  document.getElementById('privacyModal').style.display = 'block';
+}
+function closePrivacy() {
+  document.getElementById('privacyModal').style.display = 'none';
+}
+function openTerms() {
+  document.getElementById('termsModal').style.display = 'block';
+}
+function closeTerms() {
+  document.getElementById('termsModal').style.display = 'none';
+}
+function acceptGdpr() {
+  localStorage.setItem('gdprAccepted', 'true');
+  document.getElementById('gdpr-banner').style.display = 'none';
+}
+window.onload = function() {
+  if (!localStorage.getItem('gdprAccepted')) {
+    document.getElementById('gdpr-banner').style.display = 'block';
+  }
+}
+window.addEventListener('click', function(event) {
+  var privacyModal = document.getElementById('privacyModal');
+  var termsModal = document.getElementById('termsModal');
+  if (event.target === privacyModal) {
+    privacyModal.style.display = 'none';
+  }
+  if (event.target === termsModal) {
+    termsModal.style.display = 'none';
+  }
+});
+</script>
+</body>
+</html>
