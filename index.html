@@ -396,11 +396,34 @@
     <p>&copy; 2025 UK Fields Services. All rights reserved.</p>
     <nav>
         <a href="#contact">Contact</a>
-        <a href="#privacy">Privacy</a>
+        <a href="#" onclick="openPrivacy()">Privacy</a>
         <a href="#terms">Terms</a>
         <a href="#services">Our Services</a>
     </nav>
 </footer>
 
+<div id="privacyModal" class="privacy-modal">
+  <div class="privacy-modal-content">
+    <span class="privacy-close" onclick="closePrivacy()">&times;</span>
+    <h2>Privacy Notice</h2>
+    <p><strong>UK Field Services</strong> is a claims support agency. We are <strong>not a law firm</strong> and do not employ lawyers. Any legal services you may require in relation to your case are <strong>outsourced to trusted professional partners</strong> who are qualified and specialised in the relevant area of law.</p>
+    <p>We take privacy seriously and ensure that all information you provide to us is kept confidential and used strictly for the purpose of assisting with your compensation or claims process. By using this site and submitting a claim, you agree to our terms of service and privacy practices.</p>
+    <p>For any questions regarding your personal data or our privacy approach, please contact us at <a href="mailto:info@ukfieldsservices.co.uk">info@ukfieldsservices.co.uk</a>.</p>
+  </div>
+</div>
+<script>
+function openPrivacy() {
+  document.getElementById('privacyModal').style.display = 'block';
+}
+function closePrivacy() {
+  document.getElementById('privacyModal').style.display = 'none';
+}
+window.onclick = function(event) {
+  const modal = document.getElementById('privacyModal');
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+}
+</script>
 </body>
 </html>
