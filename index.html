@@ -272,46 +272,46 @@
         }
     }
     .privacy-modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1000; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%;
-    overflow: auto; 
-    background-color: rgba(0, 0, 0, 0.5); 
-}
+        display: none; 
+        position: fixed; 
+        z-index: 1000; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%;
+        overflow: auto; 
+        background-color: rgba(0, 0, 0, 0.5); 
+    }
 
-.privacy-modal-content {
-    background-color: #fff;
-    margin: 10% auto;
-    padding: 20px;
-    border: 2px solid #004080;
-    width: 90%;
-    max-width: 600px;
-    border-radius: 10px;
-    position: relative;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-}
+    .privacy-modal-content {
+        background-color: #fff;
+        margin: 10% auto;
+        padding: 20px;
+        border: 2px solid #004080;
+        width: 90%;
+        max-width: 600px;
+        border-radius: 10px;
+        position: relative;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
 
-.privacy-close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    cursor: pointer;
-}
+    .privacy-close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        cursor: pointer;
+    }
 
-.privacy-close:hover,
-.privacy-close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
+    .privacy-close:hover,
+    .privacy-close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
 
 </style>
 </head>
@@ -346,7 +346,6 @@
     </div>
 
     <div class="services">
-
         <div class="service-item">
             <img src="images/compensation.png" alt="Consumer Compensation Icon" style="height: 60px; margin-bottom: 10px;">
             <h3>Consumer Compensation</h3>
@@ -382,7 +381,6 @@
             <h3>Insurance Claims</h3>
             <p>Expert support for insurance disputes, denied claims, and recovery of owed compensation.</p>
         </div>
-
     </div>
 </section>
 
@@ -449,7 +447,9 @@
   <div class="privacy-modal-content">
     <span class="privacy-close" onclick="closePrivacy()">&times;</span>
     <h2>Privacy Notice</h2>
-    <p><strong>UK Field Services</strong> is a claims support agency. ...</p>
+    <p><strong>UK Field Services</strong> is a claims support agency. We are <strong>not a law firm</strong> and do not employ lawyers. Any legal services you may require in relation to your case are <strong>outsourced to trusted professional partners</strong> who are qualified and specialised in the relevant area of law.</p>
+    <p>We take privacy seriously and ensure that all information you provide to us is kept confidential and used strictly for the purpose of assisting with your compensation or claims process. By using this site and submitting a claim, you agree to our terms of service and privacy practices.</p>
+    <p>For any questions regarding your personal data or our privacy approach, please contact us at <a href="mailto:info@ukfieldsservices.co.uk">info@ukfieldsservices.co.uk</a>.</p>
   </div>
 </div>
 
@@ -458,7 +458,16 @@
   <div class="privacy-modal-content">
     <span class="privacy-close" onclick="closeTerms()">&times;</span>
     <h2>Terms & Conditions</h2>
-    <p><strong>UK Field Services</strong> provides claims support ...</p>
+    <p><strong>UK Field Services</strong> provides claims support and consultation services. We are <strong>not a law firm</strong> and do not offer legal representation ourselves. Where legal services are required, we refer clients to independent, qualified legal professionals.</p>
+    <p>By using our services or submitting a claim through our website, you agree to the following terms:</p>
+    <ul>
+      <li>All information provided must be accurate and truthful to the best of your knowledge.</li>
+      <li>Submission of a claim does not guarantee a successful outcome. Outcomes depend on individual case merits and third-party entities involved.</li>
+      <li>We may communicate with you via email, telephone, or messaging platforms regarding your claim or consultation.</li>
+      <li>Any legal documentation or processes are the responsibility of the instructed legal professionals, not UK Field Services.</li>
+      <li>We reserve the right to decline service if information is incomplete, fraudulent, or falls outside our scope.</li>
+    </ul>
+    <p>Use of this website and our services implies full agreement with these terms. For questions, please contact us at <a href="mailto:info@ukfieldsservices.co.uk">info@ukfieldsservices.co.uk</a>.</p>
   </div>
 </div>
 
@@ -494,16 +503,16 @@ window.onload = function() {
     document.getElementById('gdpr-banner').style.display = 'block';
   }
 }
-window.onclick = function(event) {
-  const privacyModal = document.getElementById('privacyModal');
-  const termsModal = document.getElementById('termsModal');
+window.addEventListener('click', function(event) {
+  var privacyModal = document.getElementById('privacyModal');
+  var termsModal = document.getElementById('termsModal');
   if (event.target === privacyModal) {
     privacyModal.style.display = 'none';
   }
   if (event.target === termsModal) {
     termsModal.style.display = 'none';
   }
-}
+});
 </script>
 </body>
 </html>
